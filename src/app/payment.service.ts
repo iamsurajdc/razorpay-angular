@@ -11,7 +11,8 @@ export class PaymentService {
     private http: HttpClient
   ) { }
 
-  baseURL: any = "http://localhost:6005/api/user/";
+  url: any = `https://cc67644c.ngrok.io`;
+  baseURL: any = `${this.url}/api/user/`;
 
   get WindowRef() {
     return window;
